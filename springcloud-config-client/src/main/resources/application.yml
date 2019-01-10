@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8881
 
 eureka:
   instance:
@@ -13,10 +13,9 @@ eureka:
 spring:
   cloud:
     config:
-      server:
-        git:
-          uri: https://github.com/clyhs/springcloud-sample
-          search-paths: springcloud-repos
-          label: master
-          username: 
-          password: 
+      label: master
+      profile: dev
+      discovery: 
+        enabled: true
+        serviceId: config-server
+      #uri: http://localhost:8888/
