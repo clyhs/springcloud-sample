@@ -61,6 +61,7 @@
     <module>springcloud-zuul</module>
     <module>springcloud-config-server</module>
     <module>springcloud-config-client</module>
+    <module>springcloud-bus-amqp</module>
   </modules>
 
 </project>

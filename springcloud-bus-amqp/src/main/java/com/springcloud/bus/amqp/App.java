@@ -1,4 +1,4 @@
-package com.springcloud.config.client;
+package com.springcloud.bus.amqp;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -18,14 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @RestController
 @RefreshScope
-public class App {
-
+public class App 
+{
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
 	}
 
 	@Value("${foo}")
 	String foo;
+
 	@RequestMapping(value = "/hi")
 	public String hi(){
 		return foo;
