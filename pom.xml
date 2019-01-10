@@ -57,6 +57,7 @@
         <module>springcloud-eureka</module>
     <module>springcloud-hello-service</module>
     <module>springcloud-ribbon</module>
+    <module>springcloud-feign</module>
   </modules>
 
 </project>
