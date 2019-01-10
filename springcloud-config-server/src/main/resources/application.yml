@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/clyhs/springcloud-sample
+          search-paths: springcloud-repos
+          label: master
+          username: clyhs
+          password: 281984clyhs
