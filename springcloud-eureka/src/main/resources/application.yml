@@ -16,4 +16,4 @@
 
 spring:
   profiles:
-    active: peer2
+    active: peer1
