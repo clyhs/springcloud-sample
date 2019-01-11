@@ -1,19 +1,14 @@
 server:
-  port: 8005
+  port: 8006
 
 spring:
   application:
-    name: service-hi
-#  zipkin:
-#    base-url: http://localhost:9411
-    
-    
+    name: service-turbine
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:8761/eureka/
-
 management:
   endpoints:
     web:
@@ -22,4 +17,12 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
-      
+
+turbine:
+  app-config: service-hi
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream

@@ -63,6 +63,7 @@
     <module>springcloud-config-client</module>
     <module>springcloud-bus-amqp</module>
     <module>springcloud-hystrix-dashboard</module>
+    <module>springcloud-turbine-service</module>
 	</modules>
 
 </project>
