@@ -22,6 +22,8 @@
 * springcloud-hystrix-dashboard
 > 断路器监控,8005
 > 地址：http://localhost:8005/hystrix
-* srpingcloud-turbine-service
+* springcloud-turbine-service
 > 断路器聚合监控,8006
 > 地址：http://localhost:8006/turbine.stream
+* springcloud-api-gateway,springcloud-api-gateway2
+> 服务网关，8080,9090
