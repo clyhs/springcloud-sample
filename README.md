@@ -21,5 +21,7 @@
 > 服务链路追踪,9411, 例子：springcloud-ribbon->springcloud-hello-service
 * springcloud-hystrix-dashboard
 > 断路器监控,8005
+> 地址：http://localhost:8005/hystrix
 * srpingcloud-turbine-service
 > 断路器聚合监控,8006
+> 地址：http://localhost:8006/turbine.stream
