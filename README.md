@@ -1,7 +1,8 @@
 # springcloud-sample
 
 * springcloud-eurka 
-> 注册中心discovery,8761
+> 注册中心discovery,8761，8672
+> java -jar springcloud-eureka-0.0.1-SNAPSHOT.jar - -spring.profiles.active=peer1
 * springcloud-hello-service
 > 服务提供者,8001
 * springcloud-ribbon
