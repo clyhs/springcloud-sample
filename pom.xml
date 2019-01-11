@@ -66,6 +66,7 @@
 		<module>springcloud-hystrix-dashboard</module>
 		<module>springcloud-turbine-service</module>
 		<module>springcloud-api-gateway</module>
+		<module>springcloud-api-gateway2</module>
 	</modules>
 
 </project>
