@@ -26,4 +26,4 @@
 > 断路器聚合监控,8006
 > 地址：http://localhost:8006/turbine.stream
 * springcloud-api-gateway,springcloud-api-gateway2
-> 服务网关，8080,9090
+> 服务网关,8080,9090
