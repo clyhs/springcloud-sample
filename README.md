@@ -29,3 +29,10 @@
 > 服务网关,8080,9090
 * springcloud-consul
 > 注册中心consul,8500,8007
+
+
+### 备注
+* rabbitmq下载地址：http://www.rabbitmq.com/download.html
+> rabbitmq需要erlang语言环境，配置ERLANG_HOME变量,端口5672
+* consul下载地址：https://www.consul.io/downloads.html
+> consul是golang语言开发，端口8500
