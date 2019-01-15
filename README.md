@@ -27,3 +27,5 @@
 > 地址：http://localhost:8006/turbine.stream
 * springcloud-api-gateway,springcloud-api-gateway2
 > 服务网关,8080,9090
+* springcloud-consul
+> 注册中心consul,8500,8007
