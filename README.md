@@ -20,15 +20,22 @@
 * springcloud-zipkin
 > 服务链路追踪,9411, 例子：springcloud-ribbon->springcloud-hello-service
 * springcloud-hystrix-dashboard
-> 断路器监控,8005
+> 断路器监控,8005,服务名service-hi,只监控单服务
 > 地址：http://localhost:8005/hystrix
 * springcloud-turbine-service
-> 断路器聚合监控,8006
+> 断路器聚合监控,8006,监控所有服务
 > 地址：http://localhost:8006/turbine.stream
 * springcloud-api-gateway,springcloud-api-gateway2
 > 服务网关,8080,9090
+> springcloud-api-gateway2网关调用服务service-hi(springcloud-hystrix-dashboard)
 * springcloud-consul
 > 注册中心consul,8500,8007
+* springcloud-admin-server
+> 一个管理和监控你的 Spring Boot 应用程序的应用程序,使用Spring Cloud（例如 Eureka）发现,8008
+> 可以动态切换日志级别、导出日志、导出heapdump、监控各项指标 等等….
+* springcloud-admin-client
+> 服务提供者provider-demo,8009,注册到Eureka,同时被springcloud-admin-server监控
+
 
 
 ### 备注

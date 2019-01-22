@@ -67,6 +67,8 @@
 		<module>springcloud-api-gateway</module>
 		<module>springcloud-api-gateway2</module>
     <module>springcloud-consul</module>
-  </modules>
+    <module>springcloud-admin-server</module>
+    <module>springcloud-admin-client</module>
+	</modules>
 
 </project>
