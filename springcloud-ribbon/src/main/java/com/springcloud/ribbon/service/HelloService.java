@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.springcloud.ribbon.bean.Foo;
+
 
 @Service
 public class HelloService {
@@ -19,6 +21,10 @@ public class HelloService {
     
     public String hiError(String name) {
         return "hello,"+name+",sorry,SERVICE-HELLO error!";
+    }
+    
+    public Foo getFoo(){
+    	return restTemplate.getForObject("http://SERVICE-HELLO/getfoo", Foo.class);
     }
 
 

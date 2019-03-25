@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.springcloud.ribbon.bean.Foo;
 import com.springcloud.ribbon.service.HelloService;
 
 @RestController
@@ -16,5 +17,10 @@ public class HelloControler {
     @GetMapping(value = "/hello")
     public String hi(@RequestParam String name) {
         return helloService.hiService( name );
+    }
+    
+    @GetMapping(value = "/foo")
+    public Foo getfoo() {
+        return helloService.getFoo();
     }
 }
