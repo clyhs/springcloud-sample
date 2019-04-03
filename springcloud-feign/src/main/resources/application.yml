@@ -9,3 +9,11 @@ spring:
     name: service-feign
     
 feign.hystrix.enabled: true
+
+hystrix:  
+  command:  
+    default:  
+      execution:  
+        isolation:  
+          thread:  
+            timeoutInMilliseconds: 30000 #缺省为1000  

@@ -27,7 +27,6 @@ public class UnitTestService {
     @PerfTest(invocations = 1000,threads = 100)
     public void test() {
         Foo f = dcs.getFoo();
-        
     }
 
 }

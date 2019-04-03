@@ -1,17 +1,15 @@
-server:
-  port: 8881
-
-spring:
-  application:
-    name: service-hello
-  zipkin:
-    base-url: http://localhost:9411
-
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://peer1:8761/eureka/
-      
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8003
+spring:
+  application:
+    name: service-feign
+    
+feign.hystrix.enabled: true
+
 hystrix:  
   command:  
     default:  
@@ -19,5 +17,3 @@ hystrix:
         isolation:  
           thread:  
             timeoutInMilliseconds: 30000 #缺省为1000  
-
-      

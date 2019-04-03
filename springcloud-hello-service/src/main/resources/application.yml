@@ -12,3 +12,12 @@ eureka:
     serviceUrl:
       defaultZone: http://peer1:8761/eureka/
       
+hystrix:  
+  command:  
+    default:  
+      execution:  
+        isolation:  
+          thread:  
+            timeoutInMilliseconds: 30000 #缺省为1000  
+
+      
