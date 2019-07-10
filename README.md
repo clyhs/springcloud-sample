@@ -6,11 +6,11 @@
 * springcloud-hello-service
 > 服务提供者,8001
 * springcloud-ribbon
-> 负载均衡,8002
+> 负载均衡，session共享存放在redis,8002
 * springcloud-feign
 > 负载均衡 feign集成ribbon,8003
 * springcloud-zuul
-> 服务网关,8004
+> 服务网关,访问多个ribbon测试session共享,8004
 * springcloud-config-server
 > 配置中心,8888
 * springcloud-config-client
